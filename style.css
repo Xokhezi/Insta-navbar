@@ -1,0 +1,73 @@
+body {
+  background-color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  padding: 10px;
+}
+nav li {
+  position: relative;
+}
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: purple;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 8px;
+}
+.dialog-menu-notifications {
+  opacity: 0;
+  position: absolute;
+  top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 130px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.dialog-menu-notifications ul {
+  flex-direction: column;
+  gap: 10px;
+}
+.dialog-menu-notifications li {
+  list-style: none;
+  width: 130px;
+  text-align: center;
+  cursor: pointer;
+  padding-block: 5px;
+  border-radius: 5px;
+}
+
+.dialog-menu-notifications li:hover {
+  background: purple;
+  color: white;
+  width: 100%;
+}
+.notif-dialog_show:hover .dialog-menu-notifications {
+  opacity: 1;
+}
+.dialog-menu-notifications:hover {
+  opacity: 1;
+}
